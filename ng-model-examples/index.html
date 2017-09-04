@@ -1,0 +1,26 @@
+<html ng-app="ng-model-exmpls">
+    <head>
+        <title>ng-model-examples</title>
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-controller="exmlpscontrl">
+        <h1>ng-model-examples</h1>
+        <p>Textbox:: <input type="text" ng-change="valuechange()" ng-model="textstring"></input></p>
+        <p>Checkbox::<input type="checkbox" ng-model="checkboxstring"></input></p>
+        <p>Date::<input type="date" ng-model="currdate"></input></p> 
+        <p>Radio::
+            <input type="radio" ng-model="radiobtn" value="otp1">option1</input>
+            <input type="radio" ng-model="radiobtn" value="otp2">option2</input>
+            <input type="radio" ng-model="radiobtn" value="otp3">option3</input>
+            
+        </p>
+
+        <div>
+            <p>text::{{textstring}}</p>
+            <p>checkbox:{{checkboxstring}}</p>
+            <p>date::{{currdate}}</p>
+            <p>select::{{radiobtn}}</p>
+        </div>
+    </body>
+</html>

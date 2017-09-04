@@ -1,0 +1,20 @@
+<html ng-app="nested-contrl">
+    <head>
+        <title>Nested Controller app</title>
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <h1>Nested Controller App</h1>
+
+        <div ng-controller="ctrl1 as c1">
+            <p ng-bind="c1.test_ctrl">
+            </p>
+            <div ng-controller="ctrl2 as c2">
+            <p ng-bind="c1.test_ctrl">
+            </p>
+        </div>
+        </div>
+        
+    </body>
+</html>
